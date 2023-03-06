@@ -1,0 +1,35 @@
+cd Back/src/ProEventos.API
+
+BACKEND
+
+dotnet tool install --global dotnet-ef --version 5.0.2
+dotnet tool list --global
+dotnet --versions     
+dotnet watch run
+dotnet new    
+dotnet ef -h
+dotnet ef migrations -h
+dotnet ef database update
+
+Adicionar HttpClientModule no app.modules do Angular para usar a base de dados nas paginas
+Adicionar Cors no startup
+
+-------------------------------------
+
+cd Front/ProEventos-App
+
+FRONTEND
+npm install -g @angular/cli
+ng new ProEventos-App
+npm run / npm start ou ng serve     
+
+npm install ngx-bootstrap --save
+npm install --save @fortawesome/fontawesome-free
+
+-------------------------------------
+
+Outros
+
+git add *  
+git commit -m "ddkajdkljas" 
+git push --set-upstream origin master
