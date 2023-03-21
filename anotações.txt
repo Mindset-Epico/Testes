@@ -9,7 +9,9 @@ dotnet watch run
 dotnet new    
 dotnet ef -h
 dotnet ef migrations -h
+dotnet ef migrations add Initial -p ProEventos.Persistence -s ProEventos.APIo
 dotnet ef database update
+dotnet ef database update -s ProEventos.API 
 
 Adicionar HttpClientModule no app.modules do Angular para usar a base de dados nas paginas
 Adicionar Cors no startup

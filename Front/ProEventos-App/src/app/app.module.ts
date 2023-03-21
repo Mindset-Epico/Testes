@@ -9,6 +9,8 @@ import { PalestrantesComponent } from './palestrantes/palestrantes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { FormsModule } from '@angular/forms';
+import { EventoService } from './services/evento.service';
+import { DateTimeFormatPipe } from './helpers/DateTimeFormat.pipe';
 
 
 
@@ -17,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     EventosComponent,
       PalestrantesComponent,
-      NavComponent
+      NavComponent,
+      DateTimeFormatPipe
    ],
   imports: [
     BrowserModule,
@@ -26,7 +29,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule
   ],
-  providers: [],
+  providers: [EventoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
