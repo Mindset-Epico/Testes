@@ -79,6 +79,50 @@ namespace ProEventos.Persistence.Migrations
                     b.ToTable("Lotes");
                 });
 
+            modelBuilder.Entity("ProEventos.Domain.Meta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("DiasPlanejado")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("EmpresaId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("FimOficial")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("FumPlanejado")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("InicioOficial")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("InicioPlanejado")
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("MetaAprovada")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("MetaCumprida")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("NomeMeta")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("TipoMeta")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("descricao")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Metas");
+                });
+
             modelBuilder.Entity("ProEventos.Domain.Palestrante", b =>
                 {
                     b.Property<int>("Id")
